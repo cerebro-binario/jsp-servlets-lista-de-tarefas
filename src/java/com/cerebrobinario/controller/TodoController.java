@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "TodoController", urlPatterns = {"/"})
+@WebServlet(name = "TodoController", urlPatterns = {"/backup"})
 public class TodoController extends HttpServlet {
 
     private TodoRepository repository = new TodoRepository();

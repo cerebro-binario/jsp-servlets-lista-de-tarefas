@@ -25,6 +25,7 @@ public class TodoRepository {
         for (Todo t : TODOS_DB) {
             if (t.getId().intValue() == todo.getId().intValue()) {
                 t.setTitle(todo.getTitle());
+                t.setDone(todo.isDone());
                 break;
             }
         }
